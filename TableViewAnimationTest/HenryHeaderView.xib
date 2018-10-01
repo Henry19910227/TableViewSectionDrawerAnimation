@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XYT-4R-poN" customClass="HenryHeaderView" customModule="TableViewAnimationTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0E-m5-pLv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <connections>
+                        <action selector="headerViewButtonClick" destination="XYT-4R-poN" eventType="touchUpInside" id="JDH-0w-7E4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.66666668650000005" green="0.19473605320000001" blue="0.13973512099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="VMk-zR-uga" firstAttribute="trailing" secondItem="L0E-m5-pLv" secondAttribute="trailing" id="Cz3-mJ-yen"/>
+                <constraint firstItem="L0E-m5-pLv" firstAttribute="leading" secondItem="VMk-zR-uga" secondAttribute="leading" id="F6G-gR-Kdm"/>
+                <constraint firstItem="VMk-zR-uga" firstAttribute="bottom" secondItem="L0E-m5-pLv" secondAttribute="bottom" id="UKN-8n-hPb"/>
+                <constraint firstItem="L0E-m5-pLv" firstAttribute="top" secondItem="VMk-zR-uga" secondAttribute="top" id="pYa-lV-NWi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="VMk-zR-uga"/>
+            <point key="canvasLocation" x="-4" y="157"/>
+        </view>
+    </objects>
+</document>
