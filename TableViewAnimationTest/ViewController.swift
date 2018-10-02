@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var datas: [[String]] = [["0","1","2"],["0","1"],["0","1","2"],["0","1","2","3","4","5"],["0","1","2"]]
+    private var datas: [[String]] = [["0","1","2"],["0","1"],["0","1","2"],["0","1","222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222","3","4","5"],["0","1","2"]]
     
     private var tempDicts = [Int : [String]]()
 
@@ -51,6 +51,11 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return 60
     }
     
@@ -73,13 +78,13 @@ extension ViewController: UITableViewDelegate {
         return 0.01
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        datas[indexPath.section].remove(at: indexPath.row)
-        tableView.beginUpdates()
-        tableView.deleteRows(at: [indexPath], with: .none)
-        tableView.endUpdates()
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//        datas[indexPath.section].remove(at: indexPath.row)
+//        tableView.beginUpdates()
+//        tableView.deleteRows(at: [indexPath], with: .none)
+//        tableView.endUpdates()
+//    }
 }
 
 //MARK: - HenryHeaderViewDelegate

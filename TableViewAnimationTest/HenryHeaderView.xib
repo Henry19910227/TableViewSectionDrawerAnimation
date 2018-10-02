@@ -15,23 +15,36 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ieO-hA-ZH0">
+                    <rect key="frame" x="345" y="15" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="9A5-UP-U6F"/>
+                        <constraint firstAttribute="width" constant="15" id="CFC-MK-Dqa"/>
+                    </constraints>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0E-m5-pLv">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <action selector="headerViewButtonClick" destination="XYT-4R-poN" eventType="touchUpInside" id="JDH-0w-7E4"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.66666668650000005" green="0.19473605320000001" blue="0.13973512099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="VMk-zR-uga" firstAttribute="trailing" secondItem="L0E-m5-pLv" secondAttribute="trailing" id="Cz3-mJ-yen"/>
                 <constraint firstItem="L0E-m5-pLv" firstAttribute="leading" secondItem="VMk-zR-uga" secondAttribute="leading" id="F6G-gR-Kdm"/>
                 <constraint firstItem="VMk-zR-uga" firstAttribute="bottom" secondItem="L0E-m5-pLv" secondAttribute="bottom" id="UKN-8n-hPb"/>
+                <constraint firstItem="VMk-zR-uga" firstAttribute="trailing" secondItem="ieO-hA-ZH0" secondAttribute="trailing" constant="15" id="a30-eW-9lh"/>
+                <constraint firstItem="ieO-hA-ZH0" firstAttribute="centerY" secondItem="VMk-zR-uga" secondAttribute="centerY" id="jWJ-qs-R5i"/>
                 <constraint firstItem="L0E-m5-pLv" firstAttribute="top" secondItem="VMk-zR-uga" secondAttribute="top" id="pYa-lV-NWi"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="VMk-zR-uga"/>
-            <point key="canvasLocation" x="-4" y="157"/>
+            <point key="canvasLocation" x="-4" y="156.97151424287858"/>
         </view>
     </objects>
+    <resources>
+        <image name="down-arrow" width="16" height="16"/>
+    </resources>
 </document>
